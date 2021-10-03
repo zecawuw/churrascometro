@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4754/4754987.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>churrascometro</title>
+</head>
+<body>
+    
+    <div class="tela">
+        <div class="img">
+            <img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2fe23eef-f0c1-441f-8a23-6bc912d8dbd2/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211003%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211003T202344Z&X-Amz-Expires=86400&X-Amz-Signature=564c09e27b7724ff72e2d6b92d0580c902113d5ee9cf710d07ff9f2ae80c39c1&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22" alt="duas pesoas fazendo um churrasco">
+        </div><!--img-->
+        <div class="bolha">
+            <div class="churrascometro">
+                <h1>churrascômetro</h1>
+                <input id="adultos" name="adultos" type="number" placeholder="Adulto">
+                <input id="criancas" name="criancas" type="number" placeholder="Crianças">
+                <input id="duracao" name="duracao" type="number" placeholder="Duração (h)">
+                <button onclick="calcular()">Calcular</button>
+
+                <div id="resultado"></div>
+            </div><!--churracometro-->
+        </div><!--bolha-->
+    </div><!--tela-->
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

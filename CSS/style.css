@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tela{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    width: 850px;
+    height: 504px;
+}
+
+.bolha{
+    width: 567px;
+    height: 975px;
+    background-color: #efb6cd;
+    border-radius: 500px 0 0 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.churrascometro{
+    max-width: 300px;
+    background-color: #8f56a3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1{
+    margin-bottom: 10px;
+    color: #efb6cd;
+}
+
+input{
+    width: 100%;
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    background-color: #ce6690;
+    border-color: transparent;
+}
+
+input::placeholder{
+    color: #efb6cd;
+}
+
+input[type="number"]{
+    color: #efb6cd;
+}
+
+input[type="number"]::-webkit-inner-spin-button { 
+    all: unset; 
+    min-width: 21px;
+    min-height: 45px;
+    margin: 17px;
+    padding: 0px;
+    background-image: 
+    linear-gradient(to top, transparent 0px, transparent 16px, #ce6690 16px, #ce6690 26px, 
+    transparent 26px, transparent 35px, #efb6cd 35px,#efb6cd 36px,transparent 36px, transparent 40px),
+    linear-gradient(to right, transparent 0px, transparent 10px, #efb6cd 10px, #efb6cd 11px, 
+    transparent 11px, transparent 21px);
+    transform: rotate(90deg) scale(0.5, 0.6);
+    cursor:pointer;
+  }
+
+button{
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #ce6690;
+    border-color: transparent;
+    color: #efb6cd;
+    transition: 500ms;
+}
+
+button:hover{
+    background-color: #be507c;
+}
+
+p{
+    color: #efb6cd;
+    list-style: none;
+}
+
+
+.p1::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/5746/5746629.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+.p2::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3565/3565749.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.p3::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3081/3081985.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+
+@media screen and (max-width: 1100px){
+    img{
+        width: 650px;
+        height: 404px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .bolha{
+        width: 760px;
+        height: 1025px;
+    }
+
+    img{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 823px){
+    .bolha{
+        height: 824px;
+    }
+}
+
+@media screen and (max-height: 812px){
+    .bolha{
+        height: 813px;
+    }
+}
+
+@media screen and (max-height: 736px){
+    .bolha{
+        height: 737px;
+    }
+}
+
+@media screen and (max-height: 667px){
+    .bolha{
+        height: 668px;
+        border-radius: 300px 0 0 300px;
+    }
+}
+
+@media screen and (max-height: 640px){
+    .bolha{
+        height: 641px;
+        border-radius: 200px 0 0 200px;
+    }
+}
+
+@media screen and (max-height: 568px){
+    .bolha{
+        height: 569px;
+        border-radius: 150px 0 0 150px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    input[type="number"]::-webkit-inner-spin-button { 
+        transform: rotate(90deg) scale(0.8, 0.9);
+      }
+}
+
+@media screen and (max-width: 280px){
+    .bolha{
+        border-radius: 0 0 0 0;
+    }
+
+    .churrascometro{
+        max-width: 250px;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+}
+
+
